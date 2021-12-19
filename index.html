@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+      body {
+        font-family: "Poppins";
+        /* background-color: white; */
+        color: #2b2b2b;
+      }
+
+      /* navbar */
+      .nav-item {
+        margin: 0 5px;
+        font-weight: 500;
+      }
+
+      /* #intro {
+        height: 1000px;
+      } */
+      /* section */
+      section {
+        padding-top: 5rem;
+      }
+      /* jumbotron */
+      .jumbotron {
+        height: 80vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .profile {
+        width: 30vw;
+        margin-bottom: 10px;
+      }
+
+      .desc {
+        width: 30vw;
+      }
+
+      /* skill */
+      .bar {
+        width: 600px;
+        height: 20;
+        background-color: rgb(228, 228, 228);
+        border-radius: 20px;
+      }
+
+      .fill-bar {
+        border-radius: 20px;
+        width: 90%;
+        height: 100%;
+        background-color: #6200ee;
+      }
+
+      /* background color */
+      .bg-custom {
+        background-color: #6200ee;
+      }
+
+      /* button custom */
+      .btn-custom-primary {
+        padding: 0.5em 2em;
+        background-color: #6200ee;
+        border: none;
+        color: white;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+      }
+
+      .btn-custom-primary:hover {
+        box-shadow: 0px 15px 20px rgba(153, 80, 255, 0.315);
+        transform: translateY(-5px);
+        background-color: rgb(153, 80, 255);
+      }
+
+      .btn-custom-secondary {
+        padding: 0.5em 2em;
+        background-color: transparent;
+        border: 1px solid #6200ee;
+        color: #6200ee;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+      }
+
+      .btn-custom-secondary:hover {
+        /* box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.315); */
+        transform: translateY(-5px);
+      }
+
+      /* media query */
+      @media screen and (max-width: 576px) {
+        /* jumbotron */
+        .jumbotron {
+          display: block;
+        }
+
+        .profile {
+          margin: 50px auto 10px auto;
+          width: 80vw;
+        }
+
+        .desc {
+          margin: auto;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    </style>
+    <title>Syailendra | Portofolio</title>
+  </head>
+
+  <body id="home">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm" id="home">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h4 class="fw-bold">Syailendra Portofolio</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <!-- <li>
+              <a href="#"><button type="button" class="btn-custom-primary">Get Started</button> </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- jumbotron -->
+    <section class="bg-white">
+      <div class="container jumbotron">
+        <div class="profile">
+          <img class="profile" src="img/profil.png" alt="photoprofile" />
+        </div>
+        <div class="desc border-1">
+          <h1 class="fw-bold">Hi, I'am Syailendra</h1>
+          <p class="fs-6">Programmer | Editor | Designer</p>
+          <!-- <p class="fs-6">Introducting my name is Muhammad Aji Rosyid Syailendra, I'am a fullstack development.</p> -->
+          <a href="#intro"><button type="button" class="btn-custom-primary">Explore me</button> </a>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#6200ee"
+          fill-opacity="1"
+          d="M0,288L60,266.7C120,245,240,203,360,176C480,149,600,139,720,149.3C840,160,960,192,1080,213.3C1200,235,1320,245,1380,250.7L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir jumbotron -->
+
+    <!-- about -->
+    <section class="bg-custom" id="intro">
+      <div class="container text-white">
+        <div class="row text-center mb-2" data-aos="fade-down">
+          <div class="col">
+            <h2>About me</h2>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center pb-5">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+            <p>introduce my name is <span class="fw-bold"> Muhammad Aji Rosyid Syailendra</span>, I am 16 years old, I am a student educated at SMKN 6 Surakarta. I'am from Indonesia.</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <p>I have a hobby of editing, design, even coding, I have been studying since grade 6, and until now I will continue to study to gain more knowledge.</p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,160L60,181.3C120,203,240,245,360,245.3C480,245,600,203,720,170.7C840,139,960,117,1080,112C1200,107,1320,117,1380,122.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- project -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col" data-aos="fade-down">
+            <h2>My Projects</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card border-0 shadow" data-aos="zoom-in-up" data-aos-duration="500">
+              <img src="img/1.jpg" class="card-img-top" alt="project1" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card border-0 shadow" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="50">
+              <img src="img/2.jpg" class="card-img-top" alt="project2" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="100">
+            <div class="card border-0 shadow">
+              <img src="img/3.jpg" class="card-img-top" alt="project3" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="150">
+            <div class="card border-0 shadow">
+              <img src="img/4.jpg" class="card-img-top" alt="project4" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">
+            <div class="card border-0 shadow">
+              <img src="img/5.jpg" class="card-img-top" alt="project5" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#6200ee"
+          fill-opacity="1"
+          d="M0,192L60,186.7C120,181,240,171,360,176C480,181,600,203,720,186.7C840,171,960,117,1080,112C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- skill -->
+    <section id="skill" class="bg-custom text-white">
+      <div class="container">
+        <div class="row text-center mb-3" data-aos="fade-down">
+          <div class="col">
+            <h2>My Skill</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center" data-aos="zoom-in-down">
+          <div class="col-md-5 mb-3">
+            <div class="mb-4" data-aos="fade-right" data-aos-duration="500">
+              <h5>Adobe Premiere Pro</h5>
+              <div class="bar" style="width: 100%; height: 20px; background-color: #ffffff; border-radius: 20px">
+                <div style="border-radius: 20px; width: 90%; height: 100%; background-color: #292929">
+                  <br />
+                  <p class="text-white text-end">90%</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50">
+              <h5>Adobe After Effect</h5>
+              <div class="bar" style="width: 100%; height: 20px; background-color: #fff; border-radius: 20px">
+                <div style="border-radius: 20px; width: 60%; height: 100%; background-color: #292929">
+                  <br />
+                  <p class="text-white text-end">60%</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
+              <h5>Adobe Photoshop</h5>
+              <div class="bar" style="width: 100%; height: 20px; background-color: #fff; border-radius: 20px">
+                <div style="border-radius: 20px; width: 80%; height: 100%; background-color: #292929">
+                  <br />
+                  <p class="text-white text-end">80%</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="150">
+              <h5>Adobe Ilustrator</h5>
+              <div class="bar" style="width: 100%; height: 20px; background-color: #fff; border-radius: 20px">
+                <div style="border-radius: 20px; width: 75%; height: 100%; background-color: #292929">
+                  <br />
+                  <p class="text-white text-end">75%</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+              <h5>Figma</h5>
+              <div class="bar" style="width: 100%; height: 20px; background-color: #fff; border-radius: 20px">
+                <div style="border-radius: 20px; width: 65%; height: 100%; background-color: #292929">
+                  <br />
+                  <p class="text-white text-end">65%</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="250">
+              <h5>HTML</h5>
+              <div class="bar" style="width: 100%; height: 20px; background-color: #fff; border-radius: 20px">
+                <div style="border-radius: 20px; width: 80%; height: 100%; background-color: #292929">
+                  <br />
+                  <p class="text-white text-end">80%</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
+              <h5>CSS</h5>
+              <div class="bar" style="width: 100%; height: 20px; background-color: #fff; border-radius: 20px">
+                <div style="border-radius: 20px; width: 70%; height: 100%; background-color: #292929">
+                  <br />
+                  <p class="ms-3 text-white text-end">70%</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="350">
+              <h5>JavaScript</h5>
+              <div class="bar" style="width: 100%; height: 20px; background-color: #fff; border-radius: 20px">
+                <div style="border-radius: 20px; width: 60%; height: 100%; background-color: #292929">
+                  <br />
+                  <p class="ms-3 text-white text-end">60%</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">
+              <h5>PHP</h5>
+              <div class="bar" style="width: 100%; height: 20px; background-color: #fff; border-radius: 20px">
+                <div style="border-radius: 20px; width: 40%; height: 100%; background-color: #292929">
+                  <br />
+                  <p class="align-items-center ms-3 text-white text-end">40%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,224L60,208C120,192,240,160,360,165.3C480,171,600,213,720,218.7C840,224,960,192,1080,176C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3" data-aos="fade-down">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3" data-aos="fade-right" data-aos-duration="500">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
+                <label for="pesan" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn-custom-primary">Submit</button>
+              <!-- Modal -->
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#6200ee"
+          fill-opacity="1"
+          d="M0,224L60,197.3C120,171,240,117,360,128C480,139,600,213,720,224C840,235,960,181,1080,170.7C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="bg-custom">
+      <div class="container text-white">
+        <div class="row justify-content-center text-center mb-2">
+          <div class="col"><h3>Visit Me Now!</h3></div>
+        </div>
+        <div class="row justify-content-center text-center mb-3">
+          <div class="col">
+            <a href="https://www.instagram.com/thesyailendra_/" class="text-white text-decoration-none"><i class="bi bi-instagram me-3 fs-5"></i></a>
+            <a href="https://github.com/AjiSyailendra" class="text-white text-decoration-none fw-normal"><i class="bi bi-github me-3 fs-5"></i></a>
+            <a href="https://wa.me/08311814139" class="text-white text-decoration-none fw-normal"><i class="bi bi-whatsapp fs-5"></i></a>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center pb-3">
+          <div class="col"><p>2021 © thesyailendra</p></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
